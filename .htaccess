@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Presmerovanie koncovych lomitok, ak sa nejedna o adresar...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [L,R=301]
+
+# presmerovanie na stranky webu
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^registration registration.php [NC,L]
+RewriteRule ^login login.php [NC,L]
+RewriteRule ^profile profile.php [NC,L]

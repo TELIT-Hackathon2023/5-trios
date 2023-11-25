@@ -1,0 +1,136 @@
+$primarycolor: #3498db;
+
+header {
+  background-color: #f2f2f2;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+
+  &.header-hidden {
+    transform: translateY(-200px);
+  }
+
+
+}
+
+.header-container {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // padding: 20px;
+  font-family: 'Tilt Neon';
+  padding-inline: 45px;
+  background-color: #3f48f9;
+
+
+  .logo {
+    font-size: 3rem;
+    text-decoration: none;
+    font-family: 'Dongle';
+    color: white;
+    font-weight: bold;
+    //margin-left: 20px;
+  }
+
+  .login,
+  .registration {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  background-color: #005f9e;
+  padding: 15px;
+  padding-inline: 45px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    color: rgb(204, 204, 204);
+  }
+}
+
+.new-tag {
+  background-color: #ffffff;
+  color: #3c00ff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 3px;
+  // position: absolute;
+  // top: -20px;
+  // right: -10px;
+}
+
+.new {
+  position: relative;
+}
+
+/* Additional CSS for styling purposes */
+.nav-item:hover {
+  color: #ff0000;
+}
+
+
+@media(min-width: 1001px) {
+
+  .login,
+  .registration {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 1000px) {}
+
+@media(max-width: 560px) {
+
+  .login,
+  .registration {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #2E37D8;
+    font-weight: bold;
+  }
+}
+
+.profile-div {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+
+  a {
+    font-size: 1rem;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  #profile-img {
+    display: flex;
+  }
+
+}

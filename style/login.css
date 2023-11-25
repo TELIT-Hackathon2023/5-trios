@@ -1,0 +1,101 @@
+body {
+  margin: auto;
+  font-family: "Tilt Neon";
+}
+body .content-container {
+  display: flex;
+}
+body .content-container .form-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .content-container .form-section .heading {
+  color: #000000;
+  font-size: 2rem;
+}
+body .content-container .form-section .login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 90%;
+  padding: 10px;
+}
+body .content-container .form-section .login-form .form-label {
+  color: #3F3F3F;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 0 0 0;
+}
+body .content-container .form-section .login-form .form-input {
+  padding: 15px 0px 15px 15px;
+  border: 2px solid #D9D9D9;
+  border-radius: 12px;
+  width: 96%;
+}
+body .content-container .form-section .login-form ::-moz-placeholder {
+  font-family: "Tilt Neon";
+  font-size: 1rem;
+}
+body .content-container .form-section .login-form ::placeholder {
+  font-family: "Tilt Neon";
+  font-size: 1rem;
+}
+body .content-container .form-section .login-form .pass-change-btn {
+  text-decoration: none;
+  margin-top: 10px;
+  text-align: end;
+  font-size: 1rem;
+}
+body .content-container .form-section .login-form p a {
+  text-decoration: none;
+}
+body .content-container .form-section .confirm-btn {
+  margin: auto;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(238, 0, 255);
+  padding: 18px 0px;
+  transition: 0.5s;
+  border-radius: 15px;
+  margin-top: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 1em;
+  width: 100%;
+  min-width: 100px;
+}
+body .content-container .form-section .confirm-btn:hover {
+  background-color: rgb(147, 0, 158);
+}
+body .content-container .form-section #google-btn {
+  margin-top: 10px;
+  background-color: white;
+  color: #505050;
+  border: 2px solid #D9D9D9;
+  border-radius: 12px;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+body .content-container .form-section #google-btn img {
+  align-self: center;
+  justify-self: center;
+}
+body .content-container .form-section p {
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+.error-box-mail,
+.error-box-pass {
+  color: red;
+  font-size: 1rem;
+}
+
+.nsm7Bb-HzV7m-LgbsSe {
+  margin-top: 10px;
+  border-radius: 10px;
+}/*# sourceMappingURL=login.css.map */

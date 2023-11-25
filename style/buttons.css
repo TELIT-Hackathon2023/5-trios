@@ -1,0 +1,67 @@
+.tool-box {
+  display: none;
+  gap: 10px;
+}
+.tool-box button {
+  border-radius: 7px;
+  background-color: #2d2d2d;
+  border: none;
+  cursor: pointer;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding: 18px 30px;
+  transition: 0.5s;
+}
+.tool-box button:hover {
+  transform: translateY(-5px);
+  opacity: 70%;
+}
+
+.tool-box.active {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#qrBtn {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 7px;
+  background-color: #2d2d2d;
+  border: none;
+  cursor: pointer;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding: 18px 30px;
+  transition: 0.5s;
+}
+#qrBtn:hover {
+  transform: translateY(-5px);
+  opacity: 70%;
+}
+
+#sendWithBtn {
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 7px;
+  background-color: #2d2d2d;
+  border: none;
+  cursor: pointer;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding: 18px 30px;
+  transition: 0.5s;
+}
+#sendWithBtn:hover {
+  transform: translateY(-5px);
+  opacity: 70%;
+}

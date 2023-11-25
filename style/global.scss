@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+* {
+    font-family: 'Tilt Neon';
+    font-display: swap;
+}
+body {
+    background: #ffffff;
+    //font-family: "Montserrat",sans-serif;
+    font-family: 'Tilt Neon';
+    // font-family: "Dongle";
+    margin: auto;
+
+    .logout {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 67, 67);
+        padding: 10px 15px;
+        transition: .5s;
+        border-radius: 15px;
+        margin-top: 10px;
+
+        &:hover {
+            background-color: red;
+        }
+    }
+
+    .reg-succ {
+        color: white;
+    }
+}
+
+table,
+th,
+td {
+    border: 0px solid rgba(255, 255, 255, 0);
+}
+
+$placeholderColor: rgb(187, 187, 187);
+
+::placeholder {
+    color: $placeholderColor;
+}
+
+::placeholder {
+    color: $placeholderColor;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: $placeholderColor;
+}
+
+::-ms-input-placeholder {
+    color: $placeholderColor;
+}
+
+@keyframes slideUpDown {
+    0% {
+        transform: translate(-50%, 100%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(-50%, -100%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, 100%);
+        opacity: 0;
+    }
+}
+
+.toast {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    animation: slideUpDown 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.toast.show {
+    display: block;
+}
+
+.twitter-link {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    // width: fit-content;
+    padding: 10px 20px;
+    a {
+        background: black;
+        color: white;
+        text-decoration: none;
+        
+    }
+    img {
+        width: 40px;
+        border-radius: 10px;
+    }
+}
+

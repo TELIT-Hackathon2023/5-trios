@@ -1,0 +1,107 @@
+$primarycolor: #3498db;
+
+footer {
+    background-color: $primarycolor;
+    color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 50px;
+
+}
+
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$font-family: 'Open Sans', sans-serif;
+
+footer {
+    background-color: #f8f9fa;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: $font-family;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 5px 0;
+            padding: 10px;
+
+            a {
+                height: 100%;
+                color: $secondary-color;
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    p {
+        color: $secondary-color;
+        margin: 0;
+        line-height: 1.5;
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    form {
+        margin: 10px 0;
+
+        label {
+            color: $secondary-color;
+            margin-right: 10px;
+        }
+
+        input,
+        button {
+            font-family: $font-family;
+            font-size: 16px;
+            padding: 10px;
+            border: none;
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 0 2px $primary-color;
+            }
+        }
+
+        button {
+            color: #ffffff;
+            background-color: $primary-color;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    q {
+        display: block;
+        font-style: italic;
+        margin: 10px 0;
+    }
+}

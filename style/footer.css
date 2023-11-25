@@ -1,0 +1,86 @@
+footer {
+  background-color: #3498db;
+  color: white;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding: 50px;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  margin: 5px 0;
+  padding: 10px 0px;
+}
+footer ul li a {
+  height: 100%;
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer ul li a:hover {
+  color: #007bff;
+}
+footer p {
+  color: #6c757d;
+  margin: 0;
+  line-height: 1.5;
+}
+footer p a {
+  color: #007bff;
+  text-decoration: none;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+footer form {
+  margin: 10px 0;
+}
+footer form label {
+  color: #6c757d;
+  margin-right: 10px;
+}
+footer form input,
+footer form button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+footer form input:focus,
+footer form button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #007bff;
+}
+footer form button {
+  color: #ffffff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+footer form button:hover {
+  background-color: #0062cc;
+}
+footer strong {
+  font-weight: bold;
+}
+footer q {
+  display: block;
+  font-style: italic;
+  margin: 10px 0;
+}/*# sourceMappingURL=footer.css.map */
