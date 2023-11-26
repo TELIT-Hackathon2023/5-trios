@@ -1,0 +1,50 @@
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 30px;
+    row-gap: 0px;
+    column-gap: 15px;
+    gap: 5px;
+
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 35px;
+    font-size: 15px;
+    text-align: center;
+    min-width: 100px;
+    width: auto;
+    border-radius: 10px;
+    border: none;
+}
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.tooltip{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%);
+    background-color: #c3195d;
+    color: #fff;
+    width: 80px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+.grid-item:hover .tooltip {
+    display: block;
+}
+
+.occupied {
+    background-color: rgb(255, 84, 84);
+}
+.available {
+    background-color: rgb(124, 203, 124);
+}
+.parking-link {
+    text-decoration: none;
+}

@@ -30,22 +30,21 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $errorsPass[] = 'Heslo je povinné';
     }
 
-    // if (empty($errorsLogin) && empty($errorsPass)) {
-    //     $user = $parking->getUserByEmail($login);
+    if (empty($errorsLogin) && empty($errorsPass)) {
+        $user = $parking->getUserByEmail($login);
 
 
-    //     if ($user != NULL) {
-    //         if (password_verify($password, $user["passwordHash"])) {
-    //             $parking->updateUsersUrlCodeLen($user['login']);
-    //             $_SESSION["user"] = $user;
-    //             //header("Location: loginsuccess.php");
-    //         } else {
-    //             $errorsPass[] = "Nesprávny e-mail alebo heslo";
-    //         }
-    //     } else {
-    //         $errorsPass[] =  'Nesprávny e-mail alebo heslo';
-    //     }
-    // }
+        if ($user != NULL) {
+            if (password_verify($password, $user["password_hash"])) {
+                $_SESSION["user"] = $user;
+                //header("Location: loginsuccess.php");
+            } else {
+                $errorsPass[] = "Nesprávny e-mail alebo heslo";
+            }
+        } else {
+            $errorsPass[] =  'Nesprávny e-mail alebo heslo';
+        }
+    }
 }
 ?>
 <!DOCTYPE html>

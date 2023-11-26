@@ -10,10 +10,10 @@ $parking = new Parking();
 
 
 
-$localhost = $parking->isLocalhost;
+// $localhost = $parking->isLocalhost;
 
-if (isset($_POST["url"])) {
-}
+// if (isset($_POST["url"])) {
+// }
 
 
 ?>
@@ -26,16 +26,16 @@ if (isset($_POST["url"])) {
             color: red;
         }
     </style>
-    <link rel="preload" as="font">
-    <link rel="manifest" href="./manifest.json">
+    <!-- <link rel="preload" as="font"> -->
+    <!-- <link rel="manifest" href="./manifest.json"> -->
 
     <meta charset="UTF-8">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/global.css" async defer>
-    <link rel="stylesheet" href="./style/header.css" async defer>
-    <link rel="stylesheet" href="./style/home.css" async defer>
+    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/home.css">
     <script src="./js/burger.js"></script>
     <title>Parking app</title>
 </head>
@@ -48,6 +48,6 @@ if (isset($_POST["url"])) {
 
 
 
-<?php
-require_once "./components/footer.php";
-?>
+<!-- <?php
+        require_once "./components/footer.php";
+        ?> -->

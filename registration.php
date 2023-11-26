@@ -13,7 +13,7 @@ require "./PHPMailer/src/SMTP.php";
 require_once "./classes/Parking.class.php";
 require_once "./components/header.php";
 require_once "./classes/Tools.class.php";
-// require_once "./classes/Mailer.class.php";
+require_once "./classes/Mailer.class.php";
 
 $tools = new Tools();
 $parking = new Parking();
@@ -73,11 +73,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   } else if ($password !== $passwordConfirm) {
     $errorsPasswordConfirm[] = 'Heslá sa nezhodujú';
   }
-
   if (empty($errorsEmail) && empty($errorsfname) && empty($errorslname) && empty($errorsfname) && empty($errorsPlateNumber) && empty($errorsMobilePhone)) {
     $userMsg = "Your login creditials: " . $login;
     $userSub = $fname . " " . $lname;
-
 
     $password = $tools->generateRandomString(10);
     $password_hash = password_hash($password, PASSWORD_DEFAULT);
@@ -95,8 +93,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
       $mail->Username   = 'trios9371@gmail.com';                     //SMTP username
       $mail->Password   = 'trios201523';                               //SMTP password
-      $mail->SMTPSecure = "tls";            //Enable implicit TLS encryption
-      $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+      $mail->SMTPSecure = "ssl";            //Enable implicit TLS encryption
+      $mail->Port       = 467;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
       //Recipients
       $mail->setFrom('trios9371@gmail.com', 'test');
