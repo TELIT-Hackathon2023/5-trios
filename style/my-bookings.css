@@ -19,7 +19,7 @@
 }
 
 .booking {
-    background-color: magenta;
+    background-color: rgb(255, 60, 255);
     color: white;
     padding: 15px;
     border-radius: 8px;
@@ -41,14 +41,15 @@
 .booking a {
     display: block;
     text-decoration: none;
-    color: white;
-    background-color: #4CAF50;
+    color: rgb(114, 114, 114);
+    background-color: #ccffce;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
     margin-top: 10px;
+    transition: .5s;
 }
 
 .booking a:hover {
-    background-color: #45a049;
+    background-color: rgb(252, 153, 255)
 }

@@ -39,13 +39,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/booking.css">
+    <link rel="stylesheet" href="style/update-booking.css">
     <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/global.css">
+
     <title>Document</title>
 </head>
 
 <body>
+    <?php require_once "./components/header.php" ?>
     <div class="content-container">
-        <h1>Edit Booking</h1>
+        <h1>Edit Booking</h1> <br>
         <form id="update-form" action="" method="POST">
             <div class="form-group">
                 <label for="time_from">Time from:</label>

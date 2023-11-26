@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <div class="form-section">
             <form class="login-form" onsubmit="return validateForm()" method="POST">
-                <h1 class="heading">Rezervacia parkovacieho miesta č. <?= $parking_id ?></h1>
+                <h1 class="heading">Booking: Parking spot n. <?= $parking_id ?></h1>
                 <div class="form-group">
                     <!-- <label class="form-label" for="parking_place">Vyber parkovacieho miesta: </label>
                     <select id="parking_place" name="parking_id">
@@ -52,16 +52,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label" for="time_from">Vyberte cas rezervacie od:</label>
+                    <label class="form-label" for="time_from">Select time from:</label>
                     <input class="form-input date" type="datetime-local" name="time_from" id="time_from">
 
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="time_till">Vyberte cas rezervacie do:</label>
+                    <label class="form-label" for="time_till">Select time till:</label>
                     <input class="form-input date" type="datetime-local" name="time_till" id="time_till">
 
                 </div>
-                <button class="confirm-btn">Vytvoriť rezerváciu</button>
+                <button class="confirm-btn">Create Reservation</button>
 
 
             </form>

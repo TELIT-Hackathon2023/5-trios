@@ -1,0 +1,62 @@
+.content-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: magenta;
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: magenta;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.buttons-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="submit"] {
+    background-color: magenta;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.url-delete-btn {
+    color: magenta;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.url-delete-btn:hover {
+    text-decoration: underline;
+}
