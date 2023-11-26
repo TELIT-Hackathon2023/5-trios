@@ -6,14 +6,13 @@ require_once "./classes/Tools.class.php";
 require_once "./classes/Parking.class.php";
 
 $tools = new Tools();
+
 $parking = new Parking();
 
 
 
 // $localhost = $parking->isLocalhost;
 
-// if (isset($_POST["url"])) {
-// }
 
 
 ?>

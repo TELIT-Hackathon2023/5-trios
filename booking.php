@@ -1,10 +1,12 @@
 <?php
 
+session_start();
 error_reporting(E_ERROR);
 require_once "./classes/Tools.class.php";
+
 $tools = new Tools();
 $parking = new Parking();
-
+$user = $_SESSION['user'];
 $parking_places = $parking->getPlaces();
 $parking_id = $_GET["p_id"];
 
@@ -12,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     //$parking_id = $_POST["parking_id"];
     $time_from = $_POST["time_from"];
     $time_till = $_POST["time_till"];
-    $user_id = 4;
+    $user_id = $user['id'];
     $parking->createBooking($time_from, $time_till, $user_id, $parking_id);
 }
 ?>

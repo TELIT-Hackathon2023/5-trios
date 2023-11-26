@@ -50,6 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <?php require_once "./components/header.php" ?>
     <div class="content-container">
         <h1>Edit Booking</h1> <br>
+
+
         <form id="update-form" action="" method="POST">
             <div class="form-group">
                 <label for="time_from">Time from:</label>
